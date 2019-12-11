@@ -7,7 +7,7 @@
 
 if(isset($_REQUEST['signed_request'])){
   $signedRequest = $_REQUEST['signed_request'];
-  $consumer_secret = '<consumer secret for your connected/canvas app>';
+  $consumer_secret = 'BEDB77F69F339D1CF7BC007AD611D96096A250D6BD603B7D38DCFA54486A8338';
   $sep = strpos($signedRequest, '.');
   $encodedSig = substr($signedRequest, 0, $sep);
   $encodedEnv = substr($signedRequest, $sep + 1);
